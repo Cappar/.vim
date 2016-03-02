@@ -189,8 +189,8 @@ endif
 
 set t_Co=256
 let base16colorspace=256
-colorscheme base16-google
 set background=dark
+colorscheme solarized 
 highlight Constant ctermbg=Blue
 highlight VertSplit ctermfg=244 ctermbg=NONE cterm=bold
 
