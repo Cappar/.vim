@@ -19,7 +19,7 @@ NeoBundle 'flazz/vim-colorschemes'
 
 " Syntax
 NeoBundle 'Valloric/YouCompleteMe'
-NeoBundle 'git://git.code.sf.net/p/vim-latex/vim-latex'
+NeoBundle 'LaTeX-Suite-aka-Vim-LaTeX'
 NeoBundle 'jrozner/vim-antlr'
 
 " Interface
@@ -190,13 +190,14 @@ endif
 set t_Co=256
 let base16colorspace=256
 set background=dark
-colorscheme solarized 
+colorscheme base16-flat 
 highlight Constant ctermbg=Blue
 highlight VertSplit ctermfg=244 ctermbg=NONE cterm=bold
 
 set numberwidth=5
-highlight LineNr term=bold cterm=NONE ctermfg=Black ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 set nu
+highlight CursorLine cterm=NONE ctermbg=darkgreen ctermfg=white guibg=darkgreen guifg=white
 
 let g:airline_powerline_fonts=1
 let g:airline_theme='base16'
