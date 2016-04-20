@@ -5,6 +5,8 @@ if &compatible
   set nocompatible               " Be iMproved
 endif
 
+let g:python3_host_prog = "/usr/lib/python3.5"
+
 call plug#begin('~/.vim/plugged')
 
 " Colors
@@ -37,6 +39,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-dispatch'
 Plug 'derekwyatt/vim-protodef'
 
+" SQL workflow
+Plug 'krisajenkins/vim-pipe'
 " Required:
 call plug#end()
 
@@ -246,3 +250,7 @@ map s <Plug>(easymotion-overwin-f2)
 
 let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
 let g:EasyMotion_smartcase = 1 " US layout
+
+autocmd FileType sql let b:vimpipe_command="psql imdb" 
+autocmd FileType sql let b:vimpipe_filetype="postgresql"
+
